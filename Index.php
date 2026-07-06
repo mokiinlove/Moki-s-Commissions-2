@@ -14,12 +14,16 @@
     <title><?= $lang['page-title'] ?></title>
     
     <link rel="stylesheet" href="Index.css">
+    <link rel="icon" type="image/png" href="./images/others/page-icon.png">
 </head>
 <body>
     <div class="full-div">
         <div class="inside-div"> <!-- FIRST INSIDE DIV -->
             <div class="status-div">
                 <h1><?= $lang['status'] ?></h1>
+            </div>
+            <div class="status-text-div">
+                <p><?= $lang['status-text'] ?></p>
             </div>
         </div>
 
