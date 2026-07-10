@@ -1,20 +1,82 @@
-html, body {
-  cursor: url('./cursor/fetti-normal.cur') 0 0, url('./cursor/fetti-busy.cur') 0 0, auto;
+body{
+    background-image: url(./images/miau-background.jpg);
+    background-size: 120%;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: top;
+    font-family: "Geist Pixel";
+    color: #3100d3;
+  	cursor: url('./cursor/fetti-normal.cur') 0 0, url('./cursor/fetti-busy.cur') 0 0, auto;
 }
 
 .full-div{
-	width: 47%;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	background-color: red;
+    width: 100%;
+    height: auto;
+    gap: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inside-div{
-	width: 100%;
-	padding: 0;
-	display: flex;
-	flex-direction: column; 
-	align-items: center;
-	background-color: blue;
+    width: 43%;
+    height: auto;
+    padding: 1vw;
+    border: 2px solid #3100d3;
+    justify-content: center;
+    background-color: #f3f3f3de;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.first-inside-div{
+    margin-top: 8vh;
+}
+
+.second-inside-div{
+    margin-bottom: 8vw;
+    gap: 3vh;
+}
+
+.text-no-margin{
+    margin: 0;
+    padding: 0;
+}
+
+.text-margin-1{
+    margin: 0.5%;
+    padding: 0;
+}
+
+.status-div, .status-text-div{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img-fetti-og{
+    width: 30vh;
+    margin-top: 2vh;
+}
+
+.info-double-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3%;
+    justify-content: space-around;
+}
+
+.separator{
+    width: 2px;
+    height: 30vh;
+    background: #3100d3;
+}
+
+@media (width <= 990px) {
+    .inside-div {
+        width: 425px;
+    }
 }
