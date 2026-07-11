@@ -10,6 +10,28 @@ body{
   	cursor: url('./cursor/fetti-normal.cur') 0 0, url('./cursor/fetti-busy.cur') 0 0, auto;
 }
 
+.floating-divs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    
+}
+
+.menu-burger{
+    right: 0;
+}
+
+.burger-menu-svg{
+    color: #6b7280;
+    transition: all 0.25s ease;
+    cursor: url('./cursor/fetti-select.ani') 0 0, url('./cursor/fetti-select.cur') 0 0, auto;
+}
+
+.burger-menu-svg:hover{
+    color: #3100d3;
+}
+
 .full-div{
     width: 100%;
     height: auto;
@@ -24,12 +46,12 @@ body{
     height: auto;
     padding: 1vw;
     border: 2px solid #3100d3;
-    justify-content: center;
     background-color: #f3f3f3de;
     display: flex;
     flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .first-inside-div{
@@ -38,7 +60,6 @@ body{
 
 .second-inside-div{
     margin-bottom: 8vw;
-    gap: 3vh;
 }
 
 .text-no-margin{
@@ -85,13 +106,42 @@ body{
     background: #3100d3;
 }
 
+.social-icons{
+    display: flex;
+    margin-bottom: 1vh;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-icons a{
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover{
+    color: #3100d3;
+}
+
+.social-icons svg {
+    width: 40px;
+    height: 40px;
+}
+
+.icons-li{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 @media (width <= 990px) {
     body{
         background-position-y: bottom; /* TO CHANGE LATER. FUTURE WALLPAPERS WONT LOOK GOOD AT THE BOTTOM */
     }
 
     .inside-div {
-        width: 390px;
+        width: 425px;
         padding-left: 2.5vw;
         padding-right: 2.5vw;
         margin-left: 3vw;
@@ -106,5 +156,19 @@ body{
         width: 2px;
         height: 20vh;
         background: #3100d3;
+    }
+
+    .icons-li{
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .burger-menu-svg{
+        color: #6b7280;
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw;
+        transition: all 0.25s ease;
+        cursor: url('./cursor/fetti-select.ani') 0 0, url('./cursor/fetti-select.cur') 0 0, auto;
     }
 }
