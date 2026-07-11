@@ -74,8 +74,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3%;
     justify-content: space-evenly;
+    gap: 3%;
+    line-height: 3x;
 }
 
 .separator{
@@ -85,9 +86,15 @@ body{
 }
 
 @media (width <= 990px) {
+    body{
+        background-position-y: center;
+    }
+
     .inside-div {
         width: 425px;
         padding-left: 5vw;
         padding-right: 5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
 }
