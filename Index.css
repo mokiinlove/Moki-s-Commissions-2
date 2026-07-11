@@ -1,6 +1,7 @@
 body{
-    background-image: url(./images/artwork/fetti-hunter-blep.png);
+    background-image: url(./images/artwork/fetti-hunter-blep.webp);
     background-size: 100%;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-position-y: bottom;
@@ -86,5 +87,7 @@ body{
 @media (width <= 990px) {
     .inside-div {
         width: 425px;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
