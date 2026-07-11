@@ -58,7 +58,7 @@ body{
 }
 
 .img-fetti-div{
-    height: 95%;
+    height: 100%;
     width: auto;
     margin-bottom: 5%;
     display: flex;
@@ -87,14 +87,24 @@ body{
 
 @media (width <= 990px) {
     body{
-        background-position-y: center;
+        background-position-y: bottom; /* TO CHANGE LATER. FUTURE WALLPAPERS WONT LOOK GOOD AT THE BOTTOM */
     }
 
     .inside-div {
-        width: 425px;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        width: 390px;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
         margin-left: 3vw;
         margin-right: 3vw;
+    }
+
+    .img-fetti-og{
+        width: 20vh;
+    }
+
+    .separator{
+        width: 2px;
+        height: 20vh;
+        background: #3100d3;
     }
 }
