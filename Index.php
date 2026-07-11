@@ -37,11 +37,13 @@
         <div class="inside-div second-inside-div"> <!-- SECOND INSIDE DIV -->
 
             <div class="info-double-div">
-                <img class="img-fetti-og" src="./images/artwork/fetti-og.png" onclick="playClick()">
+                <label class="text-no-margin"><?= $lang['info-2'] ?></label>
 
                 <div class="separator"></div>
-
-                <label class="text-no-margin"><?= $lang['info-2'] ?></label>
+                
+                <div class=img-fetti-div>
+                    <img class="img-fetti-og" src="./images/artwork/fetti-og.png" onclick="playClick()">
+                </div>
             </div>
 
         </div>
