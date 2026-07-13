@@ -1,0 +1,50 @@
+<?php
+    session_start();
+
+    $selected = $_SESSION['lang'] ?? 'en';
+
+    $lang = require __DIR__ . "/languages/$selected.php";
+?>
+
+<!DOCTYPE html> <!-- TO CHANGE YOUR COMMISSIONS STATUS YOU CHANGE IT IN BOTH ENGLISH AND SPANISH FILES -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molly´s Art ✨</title>
+
+    <link rel="stylesheet" href="Index.css">
+    <link rel="icon" type="image/png" href="./images/others/page-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FLOATING DIVS / POPUPS -->
+    
+    <div class="menu-burger"> <!-- BURGER MENU -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="5vw" fill="currentColor" class="bi bi-list burger-menu-svg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </div>
+
+    <div class="full-div">
+        <div class="inside-div first-inside-div">
+
+            <div class="status-div">
+                <h1 class="text-no-margin">Terms of Service 📜</h1>
+            </div>
+            <div class="status-text-div">
+                <p class="text-margin-1">
+                    Please read the following terms of service carefully before commissioning me.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

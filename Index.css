@@ -140,6 +140,9 @@ body{
 svg {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 li{
@@ -156,6 +159,7 @@ li{
     width: 50px;
     height: 50px;
     margin-left: 0.5vw;
+    margin-right: 1.5vw;
 }
 
 .link-tos{
@@ -165,6 +169,11 @@ li{
 .svg-tos{
     width: 100%;
     height: 100%;
+}
+
+.roblox-path{
+    width: 40px;
+    height: 40px;
 }
 
 /* From Uiverse.io by joe-watson-sbf and modified by mokiinlove*/ 
@@ -254,6 +263,11 @@ p{
     margin-bottom: 1vh;
 }
 
+.img-emote{
+    width: 1.5vw;
+    vertical-align: text-bottom;
+}
+
 @media (width <= 990px) {
     body{
         background-position-y: bottom; /* TO CHANGE LATER. FUTURE WALLPAPERS WONT LOOK GOOD AT THE BOTTOM */
@@ -314,5 +328,9 @@ p{
     .h1-bases{
         margin: 0;
         margin-top: 1vh;
+    }
+
+    .img-emote{
+        width: 5.5vw;
     }
 }
