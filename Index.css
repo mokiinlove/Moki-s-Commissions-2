@@ -8,7 +8,7 @@ body{
     font-family: "Geist Pixel";
     letter-spacing: 1px;
     color: #3100d3;
-  	cursor: url('./cursor/fetti-normal.cur') 0 0, url('./cursor/fetti-busy.cur') 0 0, auto;
+  	cursor: url('./cursor/fetti-normal.cur') 0 0, url('./cursor/fetti-normal.cur') 0 0, auto;
 }
 
 .floating-divs{
@@ -16,28 +16,7 @@ body{
     top: 0;
     left: 0;
     background-color: transparent;
-    
-}
-
-.menu-burger{
-    right: 0;
-    top: 0;
-    position: fixed;
-    display: flex;
-    width: 5vw;
-    height: 5vw;
-}
-
-.burger-menu-svg{
-    color: #6b7280;
-    width: 5vw;
-    height: 5vw;
-    transition: all 0.25s ease;
-    cursor: url('./cursor/fetti-select.ani') 0 0, url('./cursor/fetti-select.cur') 0 0, auto;
-}
-
-.burger-menu-svg:hover{
-    color: #3100d3;
+    z-index: 1;
 }
 
 .full-div{
@@ -135,6 +114,7 @@ body{
 
 .social-icons a:hover{
     color: #3100d3;
+    cursor: url("./cursor/fetti-select.ani") 0 0, auto;
 }
 
 svg {
@@ -189,7 +169,6 @@ li{
     height: 100%;
     flex: 1;
     overflow: hidden;
-    cursor: pointer;
     transition: all .5s;
     display: flex;
     justify-content: center;
@@ -268,18 +247,29 @@ p{
     vertical-align: text-bottom;
 }
 
+.p-read-my-tos-emote{
+    text-align: center;
+    width: 73%;
+}
+
 @media (width <= 990px) {
     body{
-        background-position-y: bottom; /* TO CHANGE LATER. FUTURE WALLPAPERS WONT LOOK GOOD AT THE BOTTOM */
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: center; /* TO CHANGE LATER. FUTURE WALLPAPERS WONT LOOK GOOD AT THE BOTTOM */
+        background
     }
 
-    .inside-div {
+    .inside-div{
         width: 425px;
         padding-left: 2.5vw;
         padding-right: 2.5vw;
         margin-left: 3vw;
         margin-right: 3vw;
     }
+
+    
 
     .img-fetti-og{
         width: 20vh;
