@@ -49,6 +49,19 @@ body{
     margin-bottom: 8vh;
 }
 
+.tos-inside-div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 3vh;
+}
+
+.tos-div-parent{
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+
 .cards-inside-div{
     justify-content: space-around;
 }
@@ -259,6 +272,65 @@ p{
 
 label{
     cursor: url("./cursor/fetti-normal.cur") 0 0, auto;
+}
+
+/* Prices grid */
+
+.div-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vw;
+}
+
+.mini-div-grid{
+    width: auto;
+    height: auto;
+    padding: 1vw;
+    background-color: #c8bff16e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-div-grid-fullbody{
+    margin-top: 1vw;
+    width: 80%;
+}
+
+/* References */
+
+.img-ref-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    gap: 3vw;
+    padding-bottom: 2vw;
+}
+
+.ref-img-info{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c8bff16e;
+}
+
+.img-ref{
+    width: 15vw;
+}
+
+.p-img-ref{
+    margin: 0.4vw;
+    height: fit-content;
+}
+
+.p-ref-div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (width <= 990px) {
