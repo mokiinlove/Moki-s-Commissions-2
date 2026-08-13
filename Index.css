@@ -71,6 +71,10 @@ body{
     padding: 0;
 }
 
+.text-hai{
+    width: 50%;
+}
+
 .text-margin-1{
     margin: 0.5%;
     padding: 0;
@@ -312,20 +316,24 @@ label{
 }
 
 .ref-img-info{
-    width: 100%;
+    width: auto;
     height: clamp(220px, 28vw, 420px);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 85% 15%;
     align-items: stretch;
     background-color: #c8bff16e;
+    box-sizing: border-box;
 }
 
 .img-ref{
     width: 100%;
-    height: 85%;
-    flex: 0 0 85%;
+    height: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -348,12 +356,12 @@ label{
 
 .p-art{
     width: 100%;
-    height: 15%;
-    flex: 0 0 15%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .pp{
@@ -430,5 +438,9 @@ label{
 
     .img-emote{
         width: 5.5vw;
+    }
+
+    .ref-img-info{
+        height: clamp(220px, 28vw, 420px);
     }
 }
