@@ -1,6 +1,7 @@
 body{
-    background-image: url("./images/others/miau-background.jpg");
-    background-size: 100%;
+    background-color: #F3F3F3;
+    background-image: url("./images/others/background/bg-fetti-blep.png");
+    background-size: 80vw;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -105,7 +106,6 @@ body{
     align-items: center;
     justify-content: space-evenly;
     gap: 3%;
-    line-height: 3x;
 }
 
 .separator{
@@ -374,7 +374,6 @@ label{
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position-y: center; /* TO CHANGE LATER. FUTURE WALLPAPERS WONT LOOK GOOD AT THE BOTTOM */
-        background
     }
 
     .inside-div{
