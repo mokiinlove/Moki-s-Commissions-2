@@ -353,9 +353,16 @@ label{
 }
 
 .p-ref-div{
-    height: auto;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+}
+
+.art-ref-img-info .p-ref-div{
+    flex: 1;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (width <= 990px) {
