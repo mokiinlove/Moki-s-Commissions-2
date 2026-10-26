@@ -23,6 +23,16 @@
 
 <body>
 
+    <div class="mini-menu-div mini-menu-div-ych">
+        <h3 data-ych-info="title"></h3>
+        <label data-ych-info="description"></label>
+        <label data-ych-info="price"></label>
+        <label data-ych-info="type"></label>
+        <label data-ych-info="style"></label>
+
+        <img src="./images/artwork/bases/base1.png" class="card-bases-img">
+    </div>
+
     <div class="full-div">
 
         <div class="inside-div first-inside-div">
@@ -34,6 +44,39 @@
                 <p class="text-margin-1">
                     Commissions open | Art trades open
                 </p>
+            </div>
+        </div>
+
+        <div class="inside-div middle-inside-div cards-inside-div"> <!-- MIDDLE INSIDE DIV -->
+
+            <h1 class="h1-bases">Ask for my YCHs!</h1>
+
+            <div class="card">
+                <div class="container-ych"
+                    data-title="Headshot YCH"
+                    data-description="A Simple headshot/bust YCH. You can ask for a specific pose or expression, but it will be a static drawing."
+                    data-price="$5 USD"
+                    data-type="Headshot/Bust"
+                    data-style="Static drawing">
+                    <label class="label-z-index">$5</label>
+                    <img src="./images/artwork/bases/base1.png" class="card-bases-img">
+                </div>
+                
+                <div class="container-ych"
+                    data-title="YCH 2"
+                    data-description="Woof"
+                    data-price="$10 USD"
+                    data-type="Full-body"
+                    data-style="Static drawing">
+                    <label class="label-z-index">10$</label>
+                    <img src="./images/artwork/bases/base2.png" class="card-bases-img">
+                </div>
+                
+                <div class="container-ych"
+                    data-title="Blank. This is a placeholder for future YCHs">
+                    <label class="label-z-index">soon!</label>
+                    <img src="./images/others/placeholder.jpg" class="card-bases-img">
+                </div>
             </div>
         </div>
 
@@ -84,5 +127,6 @@
 
     </div>
 
+    <script src="./ych.js"></script>
 </body>
 </html>
