@@ -187,6 +187,14 @@ a{
     filter: brightness(1);
 }
 
+.mini-menu-ych-image{
+    width: 75%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+    object-fit: contain;
+}
+
 .container-ych:hover .label-z-index{
     opacity: 0;
 }
