@@ -177,7 +177,7 @@ a{
 }
 
 .card-bases-img{
-    height: 23.5vh;
+    height: 10vw;
     
     transition: filter .35s ease;
     filter: brightness(.75);
@@ -188,7 +188,7 @@ a{
 }
 
 .mini-menu-ych-image{
-    width: 75%;
+    width: 90%;
     height: auto;
     aspect-ratio: 1 / 1;
     align-self: center;
@@ -436,5 +436,27 @@ body:has(.container-ych:hover) .mini-menu-div-ych{
 
     .img-emote{
         width: 5.5vw;
+    }
+}
+
+@media (width <= 720px) {
+    .label-z-index{
+        font-size: 8vw;
+    }
+
+    .text-mini-menu{
+        font-size: 4.5vw;
+    }
+    .text-mini-menu-title{
+        font-size: 6.5vw;
+    }
+
+    .card-bases-img{
+        height: 18vw;
+    }
+
+    .mini-menu-div-ych{
+        width: 90%;
+        margin: 0;
     }
 }
