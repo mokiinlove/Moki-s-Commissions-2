@@ -458,5 +458,6 @@ body:has(.container-ych:hover) .mini-menu-div-ych{
     .mini-menu-div-ych{
         width: 90%;
         margin: 0;
+        margin-left: 2vw;
     }
 }
