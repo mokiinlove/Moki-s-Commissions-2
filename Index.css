@@ -378,6 +378,10 @@ body:has(.container-ych:hover) .mini-menu-div-ych{
     justify-content: center;
 }
 
+#portfolio-text{
+    text-align: center;
+}
+
 @media (width <= 990px) {
     body{
         background-size: 100%;
